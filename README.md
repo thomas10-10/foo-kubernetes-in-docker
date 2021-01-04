@@ -2,16 +2,6 @@
 An easy and customisable way to create cluster kubernetes in docker containers just with the cli docker and systemd+docker images
 
 ## GET-started
-Creates images ubuntu-systemd-docker and ubuntu-systemd-docker-kubeadm
-https://github.com/thomas10-10/Dockerfile
-
-```
-cd /tmp/
-curl https://raw.githubusercontent.com/thomas10-10/Dockerfile/main/ubuntu-systemd-docker/Dockerfile -o Dockerfile
-docker build -t ubuntu-systemd-docker . 
-curl https://raw.githubusercontent.com/thomas10-10/Dockerfile/main/ubuntu-systemd-docker-kubeadm/Dockerfile -o Dockerfile
-docker build -t ubuntu-systemd-docker-kubeadm . ; rm -f Dockerfile
-```
 
 Run an example like singleMaster-docker-calico.sh
 ```
