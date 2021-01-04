@@ -21,6 +21,7 @@ chmod +x singleMaster-docker-calico.sh
 ./singleMaster-docker-calico.sh create
 ```
 
+if you have a "dockerignore" error this is not a problem
 
 wait until the script is finished
 
