@@ -21,13 +21,15 @@ git clone https://github.com/thomas10-10/foo-kubernetes-in-docker.git
 cd foo-kubernetes-in-docker/examples/
 ```
 or
-```
-curl -o
 
 ```
 cd $HOME
-git clone https://github.com/thomas10-10/foo-kubernetes-in-docker.git
-cd foo-kubernetes-in-docker/examples/
+curl -o https://raw.githubusercontent.com/thomas10-10/foo-kubernetes-in-docker/main/examples/singleMaster-docker-calico.sh -o singleMaster-docker-calico.sh
+```
+
+to create :
+
+```
 chmod +x singleMaster-docker-calico.sh
 ./singleMaster-docker-calico.sh create
 ```
