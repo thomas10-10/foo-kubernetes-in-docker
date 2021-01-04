@@ -17,7 +17,7 @@ docker run -d --name $name_pattern-master1 --privileged -v /sys/fs/cgroup:/sys/f
 docker run -d --name $name_pattern-worker1 --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro $imageNode
 docker run -d --name $name_pattern-worker2 --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro $imageNode
 
-# init cluster and get token on master1
+# init cluster and get kubeadm join cmd + token on master1
 token=$(docker exec $name_pattern-master1 bash -c "kubeadm init --ignore-preflight-errors FileContent--proc-sys-net-bridge-bridge-nf-call-iptables  --ignore-preflight-errors Swap --pod-network-cidr=10.244.0.0/16" | grep  -A1 "kubeadm join" )
 
 #set kubectl for root in  master node
