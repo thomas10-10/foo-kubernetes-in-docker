@@ -7,9 +7,9 @@ https://github.com/thomas10-10/Dockerfile
 
 ```
 cd /tmp/
-wget https://raw.githubusercontent.com/thomas10-10/Dockerfile/main/ubuntu-systemd-docker/Dockerfile
-docker build -t ubuntu-systemd-docker .  ; rm -f Dockerfile
-wget https://raw.githubusercontent.com/thomas10-10/Dockerfile/main/ubuntu-systemd-docker-kubeadm/Dockerfile
+curl https://raw.githubusercontent.com/thomas10-10/Dockerfile/main/ubuntu-systemd-docker/Dockerfile -o Dockerfile
+docker build -t ubuntu-systemd-docker . 
+curl https://raw.githubusercontent.com/thomas10-10/Dockerfile/main/ubuntu-systemd-docker-kubeadm/Dockerfile -o Dockerfile
 docker build -t ubuntu-systemd-docker-kubeadm . ; rm -f Dockerfile
 ```
 
@@ -19,9 +19,20 @@ Run an example like singleMaster-docker-calico.sh
 cd $HOME
 git clone https://github.com/thomas10-10/foo-kubernetes-in-docker.git
 cd foo-kubernetes-in-docker/examples/
+```
+or
+```
+curl -o
+
+```
+cd $HOME
+git clone https://github.com/thomas10-10/foo-kubernetes-in-docker.git
+cd foo-kubernetes-in-docker/examples/
 chmod +x singleMaster-docker-calico.sh
 ./singleMaster-docker-calico.sh create
 ```
+
+
 wait until the script is finished
 
 to manage:
