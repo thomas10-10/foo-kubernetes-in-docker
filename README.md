@@ -15,7 +15,7 @@ cd $HOME
 curl https://raw.githubusercontent.com/thomas10-10/foo-kubernetes-in-docker/main/examples/singleMaster-docker-calico.sh -o singleMaster-docker-calico.sh
 ```
 
-to create :
+to create the cluster defined in this script :
 ```
 chmod +x singleMaster-docker-calico.sh
 ./singleMaster-docker-calico.sh create
