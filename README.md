@@ -1,6 +1,10 @@
 # foo-kubernetes-in-docker
 An easy and customisable way to create cluster kubernetes in docker containers just with the cli docker and systemd+docker images
 
+## Requirements
+
+just docker ! tested on docker desktop for mac (docker with 4 cpu and 8gb ram run 3 master and 3 worker)
+
 ## GET-started
 
 Run an example like singleMaster-docker-calico.sh
