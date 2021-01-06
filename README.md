@@ -12,13 +12,13 @@ cd foo-kubernetes-in-docker/examples/
 or
 ```
 cd $HOME
-curl https://raw.githubusercontent.com/thomas10-10/foo-kubernetes-in-docker/main/examples/singleMaster-docker-calico.sh -o singleMaster-docker-calico.sh
+curl https://raw.githubusercontent.com/thomas10-10/foo-kubernetes-in-docker/main/examples/multi-master-docker-calico.sh -o multi-master-docker-calico.sh
 ```
 
 to create the cluster defined in this script :
 ```
-chmod +x singleMaster-docker-calico.sh
-./singleMaster-docker-calico.sh create
+chmod +x multi-master-docker-calico.sh
+./multi-master-docker-calico.sh create
 ```
 
 if you have a "dockerignore" error this is not a problem
