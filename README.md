@@ -3,11 +3,13 @@ An easy and customisable way to create cluster kubernetes in docker containers j
 
 ## Requirements
 
-just docker ! tested on docker desktop for mac (docker with 4 cpu and 8gb ram run 3 master and 3 worker)
+just docker ! tested on docker desktop for mac (docker with 5 cpu and 8gb ram run 3 master and 3 worker)
+
+for multi master and multi worker you need > 30gb space
 
 ## GET-started
 
-Run an example like singleMaster-docker-calico.sh
+Run an example like multi-master-docker-calico.sh
 ```
 cd $HOME
 git clone https://github.com/thomas10-10/foo-kubernetes-in-docker.git
