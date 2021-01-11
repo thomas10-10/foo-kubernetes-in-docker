@@ -12,7 +12,7 @@ imageNode="ubuntu-systemd-docker-kubeadm-haproxy"
 masters="$name_pattern-master1 $name_pattern-master2 $name_pattern-master3"
 workers="$name_pattern-worker1 $name_pattern-worker2 $name_pattern-worker3"
 
-# CREATE CONTAINERS IS EXIST
+# DELETE CONTAINERS IF EXIST
 for host in $masters $workers; do
 	docker rm -f $host 2>/dev/null
 	docker run -d --name $host --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro --memory-swappiness 0  -device=/proc/sys/net/bridge:/proc/sys/net/bridge  $imageNode
