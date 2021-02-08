@@ -6,7 +6,7 @@ then
 
 bash -c 'docker build -t ubuntu-systemd-docker . -f-<<<$(curl https://raw.githubusercontent.com/thomas10-10/Dockerfile/main/ubuntu-systemd-docker/Dockerfile)'
 bash -c 'docker build -t ubuntu-systemd-docker-kubeadm . -f-<<<$(curl https://raw.githubusercontent.com/thomas10-10/Dockerfile/main/ubuntu-systemd-docker-kubeadm-haproxy/Dockerfile)'
-imageNode="ubuntu-systemd-docker-kubeadm-haproxy"
+imageNode="ubuntu-systemd-docker-kubeadm"
 
 
 masters="$name_pattern-master1 $name_pattern-master2 $name_pattern-master3"
